@@ -1,0 +1,30 @@
+.resultDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  place-content: center;
+  place-items: center;
+  padding-inline: 90px;
+}
+
+input {
+  width: 40%;
+  height: 40px;
+  border-radius: 10px;
+  padding-inline: 20px;
+}
+
+button {
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
