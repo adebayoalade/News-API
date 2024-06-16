@@ -5,17 +5,17 @@ event.preventDefault();
 
 const query = document.getElementById("query").value;
 
-// const apiKey = "10cabfacc21f4844ad33832b07f4483b";
-// const url = `https://newsapi.org/v2/everything?q=${query}`;
+const apiKey = "10cabfacc21f4844ad33832b07f4483b";
+const url = `https://newsapi.org/v2/everything?q=${query}`;
 
-// const requestObj = {
-//   method: "GET",
-//   headers: {
-//     Authorization: apiKey,
-//   },
-// };
+const requestObj = {
+  method: "GET",
+  headers: {
+    Authorization: apiKey,
+  },
+};
 
-fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=10cabfacc21f4844ad33832b07f4483b`).then(
+fetch(url, requestObj).then(
   (response) => {
     if(!response.ok) {
       throw new Error("something went wrong: " + response.statusText);
